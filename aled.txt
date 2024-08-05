@@ -1,0 +1,17 @@
+TAILWIND COMP
+
+"bg-zinc-900 min-h-screen flex flex-col":
+- bg-zinc-900: couleur de fond
+- min-h-screen: hauteur minimale de l'écran
+- flex flex-col: flexbox avec direction verticale
+
+"px-4 py-4 border-b flex":
+- px-4: padding horizontal de 4
+- py-4: padding vertical de 4
+- border-b: bordure en bas
+- flex: flexbox
+
+"w-full text-slate-50 text-4xl":
+- w-full: pour qu'ils prennent tous le meme espace ds la flexbox
+- text-slate-50: couleur
+- text-4xl: taille de police
