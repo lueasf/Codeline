@@ -3,7 +3,6 @@ TAILWIND COMP
 "bg-zinc-900 min-h-screen flex flex-col":
 - bg-zinc-900: couleur de fond
 - min-h-screen: hauteur minimale de l'écran
-- flex flex-col: flexbox avec direction verticale
 
 "px-4 py-4 border-b flex":
 - px-4: padding horizontal de 4
@@ -15,3 +14,18 @@ TAILWIND COMP
 - w-full: pour qu'ils prennent tous le meme espace ds la flexbox
 - text-slate-50: couleur
 - text-4xl: taille de police
+
+"grow flex flex-col w-[175px] shrink-0 text-slate-300 border-r border-slate-200":
+- grow: prendra le plus d'espace possible
+- flex-col: crée une colone
+- w-[175px]: de largeur de 175px
+- shrink-0: empeche de retrécir
+- border-r: bordure a droite
+- border-slate-200: couleur de la bordure
+
+"p-8 block h-full w-full focus:ouutline-none resize-none":
+- p-8: padding de 8
+- block: prend toute la largeur
+- h-full: hauteur de 100%
+- focus:ouutline-none: enlève le contour 
+- resize-none: empeche de redimensionner
