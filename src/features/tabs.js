@@ -39,7 +39,27 @@ const initialState = [
     },
 ]
 
+// Ici on crée un slice pour la gestion des onglets
 export const codeUpdator = createSlice({
     name: "code-updator",
-    
+    initialState, // valeur de départ pour le store
+    reducers: {
+        updateCode: (state, action) => {
+            state.find(obj => obj.id === action.payload.id).code =
+            action.payload.value  
+            // on cherche le bon obj pour le changer (qd on change le code)
+            // obj.id c'est id de html, css ou js et action.payload.id c'est l'id de l'onglet cliqué.
+            // action.payload.value c'est le code qu'on a tapé dans l'onglet
+            // ccl : changer le code de l'onglet cliqué
+
+            // ici on change le state, à la base on doit pas le faire mais bon redux toolkit le permet.
+        
+        }
+    }
 })
+
+export const {updateCode} = codeUpdator.actions 
+// on exporte l'action updateCode pour l'utiliser dans les composants
+
+export default codeUpdator.reducer
+// on exporte le reducer pour l'utiliser dans le store
